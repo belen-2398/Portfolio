@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="298.047mm"
-   height="69.352539mm"
-   viewBox="0 0 298.047 69.352544"
+   width="302.93301mm"
+   height="67.25853mm"
+   viewBox="0 0 302.93302 67.258534"
    version="1.1"
    id="svg1"
    inkscape:version="1.4 (86a8ad7, 2024-10-11)"
@@ -24,19 +24,20 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="0.75811588"
-     inkscape:cx="531.581"
-     inkscape:cy="-121.35348"
+     inkscape:cx="548.72878"
+     inkscape:cy="-128.60831"
      inkscape:window-width="1920"
      inkscape:window-height="1111"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1">
+     inkscape:current-layer="layer1"
+     showguides="true">
     <inkscape:page
        x="0"
        y="0"
-       width="298.047"
-       height="69.352539"
+       width="302.93301"
+       height="67.258537"
        id="page1"
        margin="105.39835 0 0"
        bleed="0" />
@@ -47,17 +48,17 @@
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-0.34900125,-140.64747)">
+     transform="translate(4.188014,-142.74148)">
     <rect
-       style="fill:#e6beae;fill-opacity:1;stroke:none;stroke-width:2.29409;stroke-linecap:square"
-       id="rect1"
-       width="294.20798"
-       height="65.96122"
-       x="1.3960048"
-       y="142.39247" />
+       style="fill:#e6beae;fill-opacity:1;stroke-width:2.35364;stroke-linecap:square"
+       id="rect5"
+       width="306.07404"
+       height="67.008232"
+       x="-4.537015"
+       y="142.74149" />
     <path
        style="fill:none;fill-opacity:1;stroke:#926c5e;stroke-width:3.94987;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
-       d="m 281.7185,152.73715 6.87732,6.31078 0.9732,34.44446 -5.75213,5.90063 -245.815341,-0.13588 -0.35584,-44.98346 z"
+       d="m 281.83585,153.34133 6.84496,6.34586 0.79708,34.44898 -5.78222,5.87115 -245.811434,-1.3927 -0.125843,-44.98468 z"
        id="path62"
        sodipodi:nodetypes="ccccccc" />
     <rect

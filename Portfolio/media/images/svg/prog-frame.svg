@@ -40,7 +40,7 @@
      id="layer1">
     <path
        id="rect1"
-       style="fill:#f6f5f5;stroke:#261e1b;stroke-width:7.30851;stroke-linecap:square"
+       style="display:inline;fill:#7ab69b;stroke:#261e1b;stroke-width:7.30851;stroke-linecap:square;fill-opacity:1"
        d="M 27.315242,6.8334777 H 184.99528 V 288.05993 H 27.315242 Z" />
     <path
        style="fill:#000000;stroke-width:1.22715"

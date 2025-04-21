@@ -6,6 +6,7 @@
   --accent-color: #e6beae;
   --dark-accent-color: #669f85;
   --dark-color: #261e1b;
+  --dark-green: #4d502e;
 }
 
 html {
@@ -119,7 +120,7 @@ nav {
 }
 
 .portrait:hover {
-  rotate: -30deg;
+  rotate: -10deg;
   transform-origin: top;
   transition: 0.3s fade;
 }
@@ -202,8 +203,6 @@ h2 {
 
 .hex {
   position: relative;
-  display: flex;
-  align-items: flex-end;
   --b: 10px;
   width: 100%;
   min-width: 10em;
@@ -268,7 +267,7 @@ h3 {
   font-weight: 400;
   position: absolute;
   color: var(--dark-color);
-  text-decoration: var(--dark-accent-color) underline;
+  text-decoration: var(--dark-green-color) underline;
   text-underline-offset: 8px;
 }
 
@@ -405,7 +404,7 @@ h3 {
       text-decoration: none;
       z-index: 20;
       padding-bottom: 0.3em;
-      border-bottom: 3px solid var(--dark-accent-color);
+      border-bottom: 3px solid var(--dark-color);
     }
   }
 
@@ -428,7 +427,7 @@ h3 {
   }
 
   .btn.interests {
-    margin-top: -17em;
+    margin-top: -20em;
     margin-left: 16em;
     display: flex;
     justify-content: center;
@@ -440,13 +439,13 @@ h3 {
     }
 
     h3 {
-      margin-top: -0.5em;
+      margin-top: -0.2em;
       z-index: 20;
     }
   }
 
   .btn.other-skills {
-    margin-top: -12em;
+    margin-top: -14em;
     display: flex;
     align-items: center;
 
@@ -454,18 +453,17 @@ h3 {
       width: 90%;
       min-height: 5em;
       max-height: 25em;
-      rotate: -90deg;
       margin-left: 5%;
     }
 
     h3 {
       margin-top: 1em;
-      margin-left: 0.2em;
+      margin-left: 2em;
       font-size: xx-large;
       text-decoration: none;
       z-index: 20;
-      padding-right: 0.3em;
-      border-right: 3px solid var(--dark-accent-color);
+      padding-right: 1em;
+      border-right: 3px solid var(--dark-color);
     }
   }
 }
@@ -491,41 +489,58 @@ h3 {
     border-top: 2px solid var(--dark-accent-color);
   }
 
+  h2 {
+    margin: 2em;
+    padding: 1em;
+    border: 5px solid var(--dark-wood-color);
+  }
+
   .book-pile {
     width: 100%;
-    height: 20%;
-    position: absolute;
+    height: 100%;
+    position: relative;
     bottom: 2em;
-    left: -1em;
+    left: 1em;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-end;
     box-sizing: border-box;
+    gap: 0.4em;
+
+    button {
+      width: fit-content;
+      height: fit-content;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: var(--dark-green);
+      gap: 1em;
+      font-size: large;
+      font-weight: 500;
+      margin-right: 1.5em;
+    }
+
+    .e-com {
+      span {
+        margin-left: -4em;
+      }
+    }
+
+    .holiday {
+      span {
+        margin-left: -3em;
+      }
+    }
+
+    button:hover,
+    button:active {
+      margin-left: 4em;
+    }
 
     img {
+      min-width: 12em;
       width: 50%;
-      rotate: -90deg;
-    }
-
-    img:hover,
-    img:active {
-      margin-left: 6em;
-    }
-
-    div {
-      display: flex;
-      width: 100%;
-      height: 100%;
-    }
-
-    h3 {
-      position: absolute;
-      left: auto;
-      right: 0;
-      margin: 0;
-      padding: 0.5em;
-      width: 90%;
-      text-align: left;
+      max-width: 30em;
     }
   }
 }
