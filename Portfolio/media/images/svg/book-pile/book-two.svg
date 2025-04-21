@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="298.396mm"
+   height="102.85664mm"
+   viewBox="0 0 298.396 102.85665"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="book-two.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.75811588"
+     inkscape:cx="524.98571"
+     inkscape:cy="5.935768"
+     inkscape:window-width="1920"
+     inkscape:window-height="1111"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showguides="false">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="298.396"
+       height="102.85665"
+       id="page1"
+       margin="105.39835 0 0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-107.14336)">
+    <path
+       id="rect55"
+       style="fill:#669f85;stroke-width:2.13231;stroke-linecap:square"
+       d="m 262.59745,110.32978 0.40886,98.1188 -260.4954145,-0.38369 -0.4088564,-98.1188 z" />
+    <path
+       id="rect62"
+       style="display:inline;fill:none;stroke:#261e1b;stroke-width:1.78958;stroke-linecap:square"
+       d="M 254.59072,121.60334 254.0541,195.2901 7.6476629,196.1679 8.1842422,122.48111 Z" />
+    <path
+       id="rect64"
+       style="display:inline;fill:none;stroke:#261e1b;stroke-width:1.58798;stroke-linecap:square"
+       d="m 250.38943,128.05954 -0.43637,59.92665 -238.567517,0.84988 0.436377,-59.92668 z" />
+    <path
+       id="rect71"
+       style="fill:#261e1b;stroke-width:0.328377;stroke-linecap:square"
+       d="m 18.781833,140.87814 1.882456,-0.23619 -0.27226,37.53726 -1.882436,0.23619 z" />
+    <path
+       id="rect74"
+       style="fill:#261e1b;stroke-width:0.27607;stroke-linecap:square"
+       d="m 22.245223,149.11391 2.116612,-0.1519 -0.170524,23.58707 -2.11661,0.1519 z" />
+  </g>
+</svg>
