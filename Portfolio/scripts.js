@@ -52,3 +52,44 @@ function openPopUp(sectionName) {
 function closePopUp() {
   document.getElementById("popupModal").style.display = "none";
 }
+
+function openProject(projectName) {
+  const modal = document.getElementById("projectModal");
+  const bodies = modal.querySelectorAll(".modal-body");
+  const heading = modal.querySelector(".name");
+  const subhead = document.getElementById("projects-subh");
+
+  subhead.style.display = "none";
+
+  bodies.forEach((body) => {
+    body.style.display = "none";
+  });
+
+  const selectedBody = modal.querySelector(`.modal-body.${projectName}`);
+
+  if (selectedBody) {
+    selectedBody.style.display = "block";
+  }
+
+  modal.style.display = "flex";
+
+  switch (projectName) {
+    case "e-com":
+      heading.textContent = "E-commerce Website";
+      break;
+    case "portfolio":
+      heading.textContent = "This portfolio";
+      break;
+    case "learning":
+      heading.textContent = "A language learning website";
+      break;
+    case "holiday":
+      heading.textContent = "A holiday planner";
+      break;
+  }
+}
+
+function closeProject() {
+  document.getElementById("projectModal").style.display = "none";
+  document.getElementById("projects-subh").style.display = "block";
+}

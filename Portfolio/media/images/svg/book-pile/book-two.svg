@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="302.92999mm"
-   height="102.86mm"
-   viewBox="0 0 302.93 102.86001"
+   width="303.27899mm"
+   height="77.731911mm"
+   viewBox="0 0 303.279 77.731918"
    version="1.1"
    id="svg1"
    inkscape:version="1.4 (86a8ad7, 2024-10-11)"
@@ -24,11 +24,11 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="0.75811588"
-     inkscape:cx="524.98571"
-     inkscape:cy="4.6167085"
-     inkscape:window-width="1920"
-     inkscape:window-height="1111"
-     inkscape:window-x="-9"
+     inkscape:cx="526.30476"
+     inkscape:cy="-89.69605"
+     inkscape:window-width="3200"
+     inkscape:window-height="1711"
+     inkscape:window-x="2391"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
@@ -36,8 +36,8 @@
     <inkscape:page
        x="0"
        y="0"
-       width="302.92999"
-       height="102.86001"
+       width="303.27899"
+       height="77.731918"
        id="page1"
        margin="105.39835 0 0"
        bleed="0" />
@@ -48,26 +48,26 @@
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-107.14336)">
+     transform="translate(0.34900119,-132.27144)">
     <path
        id="rect55"
-       style="fill:#669f85;stroke-width:2.19027;stroke-linecap:square"
-       d="M 255.27444,106.16896 255.67729,211.24059 -0.98513228,210.82971 -1.3879727,105.75808 Z" />
+       style="fill:#669f85;stroke-width:1.89499;stroke-linecap:square"
+       d="m 255.27444,132.58973 0.40285,78.65086 -256.66242228,-0.30756 -0.40284042,-78.65086 z" />
     <path
        id="rect62"
-       style="display:inline;fill:none;stroke:#261e1b;stroke-width:1.7646;stroke-linecap:square"
-       d="M 247.49498,121.60334 246.97323,195.2901 7.3971946,196.1679 7.9188999,122.48111 Z" />
+       style="display:inline;fill:none;stroke:#261e1b;stroke-width:1.52671;stroke-linecap:square"
+       d="M 247.49498,144.14306 246.97323,199.30093 7.3971946,199.958 7.9188999,144.80011 Z" />
     <path
        id="rect64"
-       style="display:inline;fill:none;stroke:#261e1b;stroke-width:1.56582;stroke-linecap:square"
-       d="m 243.41015,128.05954 -0.42428,59.92665 -231.95441,0.84988 0.424281,-59.92668 z" />
+       style="display:inline;fill:none;stroke:#261e1b;stroke-width:1.35472;stroke-linecap:square"
+       d="m 243.41015,148.97582 -0.42428,44.8578 -231.95441,0.63618 0.424281,-44.85783 z" />
     <path
        id="rect71"
-       style="fill:#261e1b;stroke-width:0.323794;stroke-linecap:square"
-       d="m 18.222725,140.87814 1.830274,-0.23619 -0.264713,37.53726 -1.830255,0.23619 z" />
+       style="fill:#261e1b;stroke-width:0.280142;stroke-linecap:square"
+       d="m 18.222725,158.57112 1.830274,-0.1768 -0.264713,28.09833 -1.830255,0.1768 z" />
     <path
        id="rect74"
-       style="fill:#261e1b;stroke-width:0.272217;stroke-linecap:square"
-       d="m 21.590109,149.11391 2.05794,-0.1519 -0.165797,23.58707 -2.057938,0.1519 z" />
+       style="fill:#261e1b;stroke-width:0.235518;stroke-linecap:square"
+       d="m 21.590109,164.73597 2.05794,-0.11371 -0.165797,17.65599 -2.057938,0.1137 z" />
   </g>
 </svg>
