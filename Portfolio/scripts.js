@@ -4,22 +4,31 @@ function openTab(evt, tabName) {
 
   tabcontent = document.getElementsByClassName("tab-content");
   for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].className = tabcontent[i].className.replace(" active", "");
+    tabcontent[i].classList.remove("active");
   }
 
   tablinks = document.getElementsByClassName("tab-link");
   for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    tablinks[i].classList.remove("active");
   }
 
-  document.getElementById(tabName).className += " active";
-  evt.currentTarget.className += " active";
+  document.getElementById(tabName).classList.add("active");
+
+  for (i = 0; i < tablinks.length; i++) {
+    if (tablinks[i].getAttribute("onclick").includes(`'${tabName}'`)) {
+      tablinks[i].classList.add("active");
+    }
+  }
 }
 
 function openPopUp(sectionName) {
   const modal = document.getElementById("popupModal");
   const bodies = modal.querySelectorAll(".modal-body");
   const heading = modal.querySelector(".name");
+
+  const frameColumn = document.getElementsByClassName("frame-column extra")[0];
+
+  frameColumn.style.display = "block";
 
   bodies.forEach((body) => {
     body.style.display = "none";
@@ -51,6 +60,9 @@ function openPopUp(sectionName) {
 
 function closePopUp() {
   document.getElementById("popupModal").style.display = "none";
+  const frameColumn = document.getElementsByClassName("frame-column extra")[0];
+
+  frameColumn.style.display = "none";
 }
 
 function openProject(projectName) {
@@ -93,3 +105,21 @@ function closeProject() {
   document.getElementById("projectModal").style.display = "none";
   document.getElementById("projects-subh").style.display = "block";
 }
+
+function updateClock() {
+  let date = new Date(),
+    h = date.getHours(),
+    m = date.getMinutes(),
+    s = date.getSeconds(),
+    hDeg = h * 30 + m * (360 / 720),
+    mDeg = m * 6 + s * (360 / 3600),
+    hHand = document.querySelector(".hour"),
+    mHand = document.querySelector(".minute");
+
+  hHand.style.transform = "rotate(" + hDeg + "deg)";
+  mHand.style.transform = "rotate(" + mDeg + "deg)";
+}
+
+updateClock();
+
+setInterval(updateClock, 60000);

@@ -36,6 +36,16 @@
     </header>
     <div class="tabs">
       <section id="home" class="tab-content active">
+        <div class="clock">
+          <img
+            class="clock-face"
+            src="media/images/svg/clock-face-s.svg"
+            alt="clock in shape of a blob"
+          />
+          <div class="center"></div>
+          <div class="hand hour"></div>
+          <div class="hand minute"></div>
+        </div>
         <div class="portrait">
           <button type="button" onclick="openTab(event, 'about')">
             <img src="media/images/svg/portrait.svg" alt="A portrait" />
@@ -55,67 +65,143 @@
             <h4>Water me</h4>
           </div>
         </div>
+        <div class="plant second">
+          <img src="media/images/svg/cactus-spiked.svg" alt="A cactus" />
+          <div class="post-it">
+            <div class="tape"></div>
+            <h4>Careful!</h4>
+          </div>
+        </div>
         <div class="title">
           <h1>Belen Limardo</h1>
           <h2>Full-stack developer</h2>
         </div>
-        <div class="bookshelf">
-          <div class="s two">
-            <h3>My projects</h3>
-            <img
-              src="media/images/svg/curved-arrow.svg"
-              alt="Curved arrow pointing at the books"
-            />
-          </div>
-          <button type="button" onclick="openTab(event, 'projects')">
-            <div class="hex"></div>
-            <img src="media/images/svg/books.svg" alt="Books" />
-          </button>
-        </div>
-        <div class="phoneshelf">
-          <button type="button" onclick="openTab(event, 'contact')">
-            <div class="hex"></div>
-            <div class="phone">
-              <img src="media/images/svg/phone.svg" alt="Phone" />
+        <div class="shelves">
+          <div class="hex small one"></div>
+          <div class="bookshelf">
+            <div class="s two">
+              <h3>My projects</h3>
+              <img
+                src="media/images/svg/curved-arrow.svg"
+                alt="Curved arrow pointing at the books"
+              />
             </div>
-          </button>
-          <div class="s three">
-            <img
-              src="media/images/svg/curved-arrow.svg"
-              alt="Curved arrow pointing at the phone"
-            />
-            <h3>Contact me</h3>
+            <button type="button" onclick="openTab(event, 'projects')">
+              <div class="hex big"></div>
+              <img src="media/images/svg/books.svg" alt="Books" />
+            </button>
           </div>
+          <div class="hex small two"></div>
+          <div class="hex small three"></div>
+          <div class="phoneshelf">
+            <button type="button" onclick="openTab(event, 'contact')">
+              <div class="hex big"></div>
+              <div class="phone">
+                <img src="media/images/svg/phone.svg" alt="Phone" />
+              </div>
+            </button>
+            <div class="s three">
+              <img
+                src="media/images/svg/curved-arrow.svg"
+                alt="Curved arrow pointing at the phone"
+              />
+              <h3>Contact me</h3>
+            </div>
+          </div>
+          <div class="hex small four"></div>
+          <div class="hex small five"></div>
         </div>
       </section>
       <section id="about" class="tab-content">
         <div class="about">
           <h1>ABOUT ME</h1>
-          <div class="frames">
-            <button class="btn coding" onclick="openPopUp('coding')">
-              <h3>
-                Coding<br />
-                skills
-              </h3>
-              <img
-                src="media/images/svg/frames/prog-frame.svg"
-                alt="Picture frame showing a computer with angular brackets on the screen"
-              />
-            </button>
-            <button class="btn education" onclick="openPopUp('education')">
-              <h3>Education</h3>
-              <img
-                src="media/images/svg/frames/edu-frame.svg"
-                alt="Picture frame showing an education cap"
-              />
-            </button>
-            <button class="btn interests" onclick="openPopUp('interests')">
-              <h3>Interests</h3>
-              <img
-                src="media/images/svg/frames/heart-frame.svg"
-                alt="Picture frame showing a heart"
-              />
-            </button>
+          <!-- <img
+            class="back-img"
+            src="media/images/svg/frames/wiggly-frame-line.svg"
+            alt="Wiggly line on the background"
+          /> -->
+          <div class="frames big">
+            <div class="frame-column">
+              <div class="fram ov one">
+                <img
+                  src="media/images/svg/frames/edu-cap.svg"
+                  alt="Education icon"
+                />
+              </div>
+
+              <div class="fram sq one">
+                <button onclick="openPopUp('education')">
+                  <h3>My education</h3>
+                </button>
+              </div>
+            </div>
+            <div class="frame-column">
+              <div class="fram sq two">
+                <button onclick="openPopUp('coding')">
+                  <h3>My coding skills</h3>
+                </button>
+              </div>
+              <div class="fram rom">
+                <img src="media/images/svg/frames/prog.svg" alt="Coding icon" />
+              </div>
+            </div>
+            <div class="frame-column extra"></div>
+            <div class="frame-column">
+              <div class="fram pen">
+                <img
+                  src="media/images/svg/frames/skills.svg"
+                  alt="Lightbulb icon"
+                />
+              </div>
+              <div class="fram sq three">
+                <button onclick="openPopUp('other')">
+                  <h3>My other skills</h3>
+                </button>
+              </div>
+            </div>
+            <div class="frame-column">
+              <div class="fram sq four">
+                <button onclick="openPopUp('interests')">
+                  <h3>My interests</h3>
+                </button>
+              </div>
+              <div class="fram ov two">
+                <img src="media/images/svg/frames/heart.svg" alt="Heart icon" />
+              </div>
+            </div>
+          </div>
+          <div class="frames small">
+            <div class="upper-frames">
+              <div class="left-frame">
+                <button class="btn coding" onclick="openPopUp('coding')">
+                  <h3>
+                    Coding<br />
+                    skills
+                  </h3>
+                  <img
+                    src="media/images/svg/frames/prog-frame.svg"
+                    alt="Picture frame showing a computer with angular brackets on the screen"
+                  />
+                </button>
+              </div>
+              <div class="right-frames">
+                <button class="btn education" onclick="openPopUp('education')">
+                  <h3>Education</h3>
+                  <img
+                    src="media/images/svg/frames/edu-frame.svg"
+                    alt="Picture frame showing an education cap"
+                  />
+                </button>
+                <button class="btn interests" onclick="openPopUp('interests')">
+                  <h3>Interests</h3>
+                  <img
+                    src="media/images/svg/frames/heart-frame.svg"
+                    alt="Picture frame showing a heart"
+                  />
+                </button>
+              </div>
+            </div>
+
             <button class="btn other-skills" onclick="openPopUp('other')">
               <h3>
                 Other<br />
@@ -126,6 +212,82 @@
                 alt="Picture frame showing a head silouhette with gears"
               />
             </button>
+          </div>
+        </div>
+        <div id="popupModal">
+          <div class="hanging">
+            <div class="nail"></div>
+            <div class="string">
+              <div class="st left"></div>
+              <div class="st right"></div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" onclick="closePopUp()">&times;</button>
+              <h2 class="name"></h2>
+            </div>
+            <div class="modal-body education">
+              <ul>
+                <li>
+                  <span class="year">2023 - 2026</span>
+                  <div>
+                    Computer Engineering<br />
+                    <span>Bachelor's degree from UTEL university</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="year">2017 - 2021</span>
+                  <div>
+                    EN-SP Translation<br />
+                    <span>Bachelor's degree from IES Lenguas Vivas</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="year">2011 - 2016</span>
+                  <div>
+                    Secondary school diploma<br />
+                    <span>ES Ceferino Namuncurá</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="modal-body coding">
+              <p>
+                My focus is on Full-stack web developement. <br />
+                I am familiar with:
+              </p>
+              <ul>
+                <li>HTML & CSS: <span>Bootstrap, Tailwind CSS, Blade</span></li>
+                <li>
+                  Javascript: <span>React.js, jQuery, Vue.js, Node.js</span>
+                </li>
+                <li>PHP: <span>Laravel</span></li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+            <div class="modal-body interests">
+              <p>
+                I enjoy both the logical side of the back-end and the artistic
+                side of the front-end.
+              </p>
+              <p>
+                I also enjoy reading and learning languages, which I consider
+                great strengths for me as a developer.
+              </p>
+            </div>
+            <div class="modal-body other">
+              <ul>
+                <li>
+                  I know several langagues: Spanish, English, German and a bit
+                  of Italian.
+                </li>
+                <li>I am organized, reliable and hard-working.</li>
+                <li>
+                  I love learning and always welcome constructive criticism.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -170,6 +332,7 @@
                 </p>
                 <a target="_blank" href="">Explore the code on github.</a>
                 <br />
+                <br />
                 <a target="_blank" href=""
                   >See pictures and videos of the website.</a
                 >
@@ -187,28 +350,6 @@
             and look at the result.
           </h2>
           <div class="book-pile">
-            <!-- <button
-              type="button"
-              onclick="openProject('portfolio')"
-              onmouseover="openProject('portfolio')"
-            >
-              <img
-                class="book nine"
-                src="media/images/svg/book-pile/book-nine.svg"
-                alt="last book in a book pile"
-              />
-            </button> -->
-            <!-- <button
-              type="button"
-              onclick="openProject()"
-              onmouseover="openProject()"
-            >
-              <img
-                class="book eight"
-                src="media/images/svg/book-pile/book-eight.svg"
-                alt="eight book in a book pile"
-              />
-            </button> -->
             <div class="e-commerce">
               <button
                 class="e-com"
@@ -224,25 +365,6 @@
                 E-Commerce site
               </button>
             </div>
-
-            <!-- <button
-              type="button"
-              onclick="openProject()">
-              <img
-                src="media/images/svg/book-pile/book-six.svg"
-                alt="sixth book in a book pile"
-              />
-            </button> -->
-
-            <!-- <button
-              type="button"
-              onclick="openProject()"
-                       >
-              <img
-                src="media/images/svg/book-pile/book-four.svg"
-                alt="fourth book in a book pile"
-              />
-            </button> -->
             <button
               class="learning"
               type="button"
@@ -282,93 +404,55 @@
       <section id="contact" class="tab-content">
         <div class="contact">
           <h1>Contact me</h1>
-          <div class="mail">
-            <div class="mail-icon">
-              <div class="circle"></div>
-              <img src="media/images/svg/mail.svg" alt="Mail icon" />
+          <img
+            class="phone-head"
+            src="media/images/svg/phone-up.svg"
+            alt="Old phone off the reciever"
+          />
+          <div class="phone-page">
+            <div class="phone-tab-content">
+              <h3>Contacts</h3>
+              <div class="holes">
+                <div class="hole"></div>
+                <div class="hole"></div>
+              </div>
+
+              <div class="sec mail">
+                <div class="sec-title">
+                  <img src="media/images/svg/email.svg" alt="E-mail icon" />
+                  <h4>E-mail</h4>
+                </div>
+
+                <a target="_blank" href="mailto:belenrociolimardo@gmail.com"
+                  >belenrociolimardo@gmail.com</a
+                >
+              </div>
+              <div class="sec github">
+                <div class="sec-title">
+                  <img src="media/images/svg/github.svg" alt="Github icon" />
+                  <h4>Github:</h4>
+                </div>
+                <a target="_blank" href="https://github.com/belen-2398"
+                  >https://github.com/belen-2398</a
+                >
+              </div>
+              <div class="sec linkedin">
+                <div class="sec-title">
+                  <img
+                    src="media/images/svg/linkedin.svg"
+                    alt="Linkedin icon"
+                  />
+                  <h4>Linkedin:</h4>
+                </div>
+                <a target="_blank" href="www.linkedin.com/in/belen-limardo"
+                  >www.linkedin.com/in/belen-limardo</a
+                >
+              </div>
             </div>
-            <a target="_blank" href="mailto:belenrociolimardo@gmail.com"
-              >belenrociolimardo@gmail.com</a
-            >
-          </div>
-          <div class="github">
-            <div class="github-icon">
-              <div class="circle"></div>
-              <img src="media/images/svg/github.svg" alt="github icon" />
-            </div>
-            <a>belenrociolimardo@gmail.com</a>
+            <div class="phone-tab">B</div>
           </div>
         </div>
       </section>
-    </div>
-    <div id="popupModal">
-      <div class="hanging">
-        <div class="nail"></div>
-        <div class="string">
-          <div class="st left"></div>
-          <div class="st right"></div>
-        </div>
-      </div>
-      <div class="modal-content">
-        <div class="modal-header">
-          <button class="close" onclick="closePopUp()">&times;</button>
-          <h2 class="name"></h2>
-        </div>
-        <div class="modal-body education">
-          <ul>
-            <li>
-              <span class="year">2023 - 2026</span>
-              <div>
-                Computer Engineering<br />
-                <span>Bachelor's degree from UTEL university</span>
-              </div>
-            </li>
-            <li>
-              <span class="year">2017 - 2021</span>
-              <div>
-                EN-SP Translation<br />
-                <span>Bachelor's degree from IES en Lenguas Vivas</span>
-              </div>
-            </li>
-            <li>
-              <span class="year">2011 - 2016</span>
-              <div>
-                Secondary school diploma<br />
-                <span>ES Ceferino Namuncurá</span>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="modal-body coding">
-          <p>My focus is on Full-stack web developement. I am familiar with:</p>
-          <ul>
-            <li>HTML & CSS: <span>Bootstrap, Tailwind CSS, Blade</span></li>
-            <li>Javascript: <span>React.js, jQuery, Vue.js, Node.js</span></li>
-            <li>PHP: <span>Laravel</span></li>
-            <li>MySQL</li>
-          </ul>
-        </div>
-        <div class="modal-body interests">
-          <p>
-            I enjoy both the logical side of the back-end and the artistic side
-            of the front-end.
-            <br />I also enjoy reading and learning languages, which I consider
-            great strengths for me as a developer.
-          </p>
-        </div>
-        <div class="modal-body other">
-          <ul>
-            <li>
-              I know several langagues: Spanish, English, German and a bit of
-              Italian.
-            </li>
-            <li>I am organized, reliable and hard-working.</li>
-            <li>
-              I love learning and constructive criticism is always welcome.
-            </li>
-          </ul>
-        </div>
-      </div>
     </div>
     <script src="scripts.js"></script>
   </body>
