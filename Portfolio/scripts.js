@@ -28,7 +28,7 @@ function openPopUp(sectionName) {
 
   const frameColumn = document.getElementsByClassName("frame-column extra")[0];
 
-  frameColumn.style.display = "block";
+  frameColumn.style.width = "35%";
 
   bodies.forEach((body) => {
     body.style.display = "none";
@@ -40,7 +40,9 @@ function openPopUp(sectionName) {
     selectedBody.style.display = "block";
   }
 
-  modal.style.display = "flex";
+  setTimeout(() => {
+    modal.style.display = "flex";
+  }, 900);
 
   switch (sectionName) {
     case "coding":
@@ -62,16 +64,13 @@ function closePopUp() {
   document.getElementById("popupModal").style.display = "none";
   const frameColumn = document.getElementsByClassName("frame-column extra")[0];
 
-  frameColumn.style.display = "none";
+  frameColumn.style.width = "0";
 }
 
 function openProject(projectName) {
   const modal = document.getElementById("projectModal");
   const bodies = modal.querySelectorAll(".modal-body");
   const heading = modal.querySelector(".name");
-  const subhead = document.getElementById("projects-subh");
-
-  subhead.style.display = "none";
 
   bodies.forEach((body) => {
     body.style.display = "none";
@@ -80,7 +79,7 @@ function openProject(projectName) {
   const selectedBody = modal.querySelector(`.modal-body.${projectName}`);
 
   if (selectedBody) {
-    selectedBody.style.display = "block";
+    selectedBody.style.display = "flex";
   }
 
   modal.style.display = "flex";
@@ -103,7 +102,6 @@ function openProject(projectName) {
 
 function closeProject() {
   document.getElementById("projectModal").style.display = "none";
-  document.getElementById("projects-subh").style.display = "block";
 }
 
 function updateClock() {

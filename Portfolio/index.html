@@ -131,14 +131,14 @@
 
               <div class="fram sq one">
                 <button onclick="openPopUp('education')">
-                  <h3>My education</h3>
+                  <h3>Education</h3>
                 </button>
               </div>
             </div>
             <div class="frame-column">
               <div class="fram sq two">
                 <button onclick="openPopUp('coding')">
-                  <h3>My coding skills</h3>
+                  <h3>Coding skills</h3>
                 </button>
               </div>
               <div class="fram rom">
@@ -155,14 +155,14 @@
               </div>
               <div class="fram sq three">
                 <button onclick="openPopUp('other')">
-                  <h3>My other skills</h3>
+                  <h3>Other skills</h3>
                 </button>
               </div>
             </div>
             <div class="frame-column">
               <div class="fram sq four">
                 <button onclick="openPopUp('interests')">
-                  <h3>My interests</h3>
+                  <h3>Interests</h3>
                 </button>
               </div>
               <div class="fram ov two">
@@ -294,6 +294,11 @@
       <section id="projects" class="tab-content">
         <div class="projects">
           <h1>MY PROJECTS</h1>
+          <img
+            class="back-img"
+            src="media/images/svg/proj-layout.svg"
+            alt="Background picture with hexagons"
+          />
           <div id="projectModal">
             <div class="modal-content">
               <div class="modal-header">
@@ -312,8 +317,8 @@
                   frameworks and libraries.
                 </p>
                 <p>
-                  I wanted the design, imagery and colors to represent me as a
-                  person, but at the same time to be
+                  I wanted the design, imagery and colors to represent my
+                  character and skills, but at the same time to be
                   <span>easy and clear to navigate</span> both on bigger and
                   smaller screens.
                 </p>
@@ -345,11 +350,24 @@
               </div>
             </div>
           </div>
-          <h2 id="projects-subh">
-            Click on the books and explore my projects: read about the process
-            and look at the result.
-          </h2>
+          <div class="m-proj-subh">
+            <div class="hex small one"></div>
+            <div class="proj-subh">
+              <div class="hex"></div>
+              <h2>
+                Click the books <br />
+                and explore my projects
+              </h2>
+            </div>
+            <div class="hex small two"></div>
+          </div>
+
           <div class="book-pile">
+            <img
+              class="str-arrow"
+              src="media/images/str-arrow.svg"
+              alt="Arrow pointing down to the pile of books."
+            />
             <div class="e-commerce">
               <button
                 class="e-com"
@@ -357,8 +375,8 @@
                 onclick="openProject('e-com')"
               >
                 <img
-                  class="book seven"
-                  src="media/images/svg/book-pile/book-seven.svg"
+                  class="book"
+                  src="media/images/svg/book-pile/bookpile-three.svg"
                   alt="Last book in a book pile"
                 />
                 <span></span>
@@ -371,7 +389,8 @@
               onclick="openProject('learning')"
             >
               <img
-                src="media/images/svg/book-pile/book-two.svg"
+                class="book"
+                src="media/images/svg/book-pile/bookpile-two.svg"
                 alt="Third book in a book pile"
               />
               <span></span>
@@ -384,7 +403,8 @@
               onclick="openProject('portfolio')"
             >
               <img
-                src="media/images/svg/book-pile/book-five.svg"
+                class="book"
+                src="media/images/svg/book-pile/bookpile-one.svg"
                 alt="Second book in a book pile"
               />
               Portfolio
@@ -392,7 +412,8 @@
             <div class="holiday">
               <button type="button" onclick="openProject('holiday')">
                 <img
-                  src="media/images/svg/book-pile/book-one.svg"
+                  class="book"
+                  src="media/images/svg/book-pile/bookpile-cero.svg"
                   alt="First book in a book pile"
                 />
                 Recipe finder
@@ -407,6 +428,11 @@
           <img
             class="phone-head"
             src="media/images/svg/phone-up.svg"
+            alt="Old phone off the reciever"
+          />
+          <img
+            class="phone-head big"
+            src="media/images/svg/phone-horiz.svg"
             alt="Old phone off the reciever"
           />
           <div class="phone-page">
